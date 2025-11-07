@@ -1,5 +1,8 @@
-// Minimal OpenNext config for Cloudflare Pages.
-// Defaults are fine; file just needs to exist.
+// OpenNext Cloudflare config — minimal but non-empty.
+// Some builds require a non-empty "default" section.
 export default {
-  // leave empty to use defaults (adapter: cloudflare, outDir: ".open-next")
+  default: {
+    outDir: ".open-next"
+    // Add more options here later if needed (e.g., assetPrefix, routes, images)
+  }
 };
