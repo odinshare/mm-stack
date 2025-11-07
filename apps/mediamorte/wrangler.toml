@@ -1,0 +1,4 @@
+name = "mediamorte"
+compatibility_date = "2025-11-07"
+# Keep Node.js APIs available for the "cloudflare-node" wrapper
+compatibility_flags = ["nodejs_compat"]
