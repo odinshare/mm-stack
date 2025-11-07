@@ -1,17 +1,16 @@
-// OpenNext config for Cloudflare Pages / Next 16
-// Minimal, but includes the required "default.override" + "middleware.override"
-// and outputs to ".open-next" for Pages.
-export default {
+import type { OpenNextConfig } from "@opennextjs/cloudflare";
+
+const config: OpenNextConfig = {
   default: {
-    outDir: ".open-next",
     override: {
       wrapper: "cloudflare-node",
       converter: "edge",
       proxyExternalRequest: "fetch",
+      // Simple defaults; swap to real caches later if needed
       incrementalCache: "dummy",
       tagCache: "dummy",
-      queue: "dummy",
-    },
+      queue: "direct"
+    }
   },
   edgeExternals: ["node:crypto"],
   middleware: {
@@ -22,7 +21,9 @@ export default {
       proxyExternalRequest: "fetch",
       incrementalCache: "dummy",
       tagCache: "dummy",
-      queue: "dummy",
-    },
-  },
+      queue: "direct"
+    }
+  }
 };
+
+export default config;
