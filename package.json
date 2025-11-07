@@ -1,0 +1,23 @@
+{
+  "name": "mm-stack",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "turbo": "^2.6.0"
+  },
+  "dependencies": {
+    "@cloudflare/next-on-pages": "^1.13.16",
+    "class-variance-authority": "^0.7.1",
+    "clsx": "^2.1.1",
+    "contentlayer": "^0.3.4",
+    "lucide-react": "^0.552.0",
+    "next-contentlayer": "^0.3.4"
+  },
+  "description": ""
+}
